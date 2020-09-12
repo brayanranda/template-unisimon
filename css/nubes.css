@@ -1,0 +1,43 @@
+
+
+.nube{
+    background-size: 100% 100%;
+    height: 250px;
+    position: absolute;
+    width: 350px;
+}
+
+.nube:nth-child(1){
+    background-image: url(../images/Vectores-01.svg);
+    animation: movimiento1 35s infinite;
+}
+
+.nube:nth-child(2){
+    margin-top: 100px;
+    background-image: url(../images/Vectores-02.svg);
+    animation: movimiento2 45s infinite;
+}
+
+.nube:nth-child(3){
+    margin-top: 200px;
+    background-image: url(../images/Vectores-03.svg);
+    animation: movimiento1 55s infinite;
+}
+
+@keyframes movimiento1{
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: -30%;
+    }
+}
+
+@keyframes movimiento2{
+    from{
+        margin-left: -30%;
+    }
+    to{
+        margin-left: 100%;
+    }
+}

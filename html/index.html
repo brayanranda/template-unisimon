@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nubes.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/semaforo.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>La Ruta Del Ferrocarril</title>
+</head>
+<body>
+
+    <div class="modal">
+        <div class="modal__content">
+            <form action="" method="">
+                <p>Registrar</p>
+                <div>
+                    <input type="text"  placeholder="Nombre" id="nombreproyecto" name="nombreproyecto" required>
+                </div>
+                <div>
+                    <input type="number"  placeholder="Código" id="code" name="code" required>
+                </div>
+                <div>
+                    <input type="email"  placeholder="Correo" id="correo" name="correo" required>
+                </div>
+                <div>
+                    <input type="number"  placeholder="Teléfono" id="telefono" name="telefono" required>
+                </div>
+                <div>
+                    <input type="date"  placeholder="Fecha" id="fecha" name="fecha" required>
+                </div>
+                <button class="btn-red" type="submit">Continuar</button>
+                <button class="btn-gris" type="reset">Borrar información</button>
+                <i class="fas fa-times-circle cerrar"></i>
+            </form>
+        </div>
+    </div>
+
+    <!-- Section tiene color piel -->
+    <div class="cont-banner-y-gameplay">
+        <section class="banner row-100">
+            <div class="title-banner">
+                <p class="txt-title-min">La</p>
+                <p class="txt-title-max">Ruta</p>
+                <p class="txt-title-min" style="padding-left: 20px;">Del</p>
+                <p class="txt-title-max">Ferrocarril</p>
+            </div>
+            <figure class="cont-img-banner">
+                <img class="row-100" src="../images/imgvector.png">
+            </figure>
+            <div class="cont-semaforo">
+                <div class="semaforo stop" id="semaforo"></div>
+            </div>
+            <div class="clouds">
+                <div class="nube uno"></div>
+                <div class="nube dos"></div>
+                <div class="nube tres"></div>
+            </div>
+        </section>
+
+        <section class="cont-game row-80 f">
+            <div class="w-60 cont-relative">
+                <div class="cont-info-game">
+                    <div class="row-90" style="padding-bottom: 20px; position: relative">
+                        <p class="title">Lorem ipsum</p>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque unde quas, officiis asperiores molestiae, pariatur sed debitis qui modi fugiat est obcaecati expedita voluptates, laborum iure maiores optio ratione magnam!
+                        </p>
+                    </div>
+                </div>
+                <figure class="cont-img-game">
+                    <img class="img-full" src="../images/imggame.jpg">
+                </figure>
+            </div>
+            <div class="w-40">
+                <div class="row-80 cont-description-img">
+                    <p class="font-s-30">Gameplay</p>
+                    <p class="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus earum corrupti modi repudiandae itaque. Eligendi quae, odio ut commodi veritatis itaque repudiandae quo dolor voluptate, magni hic asperiores praesentium. Asperiores.
+                    </p>
+                    <div class="cont-btn">
+                        <a class="btn abrir" href="">
+                            <i class="fas fa-arrow-right"></i>
+                            Registrar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="cont-info row-80">
+        <article class="cont-info__content">
+            <p class="title-features">Caracteristicas</p>
+            <p class="txt-dev">Desarrollador: U. Pamplona & Siaweb</p>
+            <div class="cont-info-txt">
+                <p class="cont-info-txt--p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione omnis deleniti reiciendis tempore unde impedit, pariatur aspernatur officia enim nulla ullam ipsum sunt? Sit corporis explicabo rem. Ad, quam!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorem, similique ea amet debitis ut. Dicta expedita voluptates a hic doloribus nisi aliquid. Temporibus voluptatibus sapiente sint quidem cupiditate non?
+                </p>
+                <p class="cont-info-txt--p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione omnis deleniti reiciendis tempore unde impedit, pariatur aspernatur officia enim nulla ullam ipsum sunt? Sit corporis explicabo rem. Ad, quam!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorem, similique ea amet debitis ut. Dicta expedita voluptates a hic doloribus nisi aliquid. Temporibus voluptatibus sapiente sint quidem cupiditate non?
+                </p>
+                <li class="cont-info-txt__li f f-a-top">
+                    <i class="fas fa-check"></i>
+                    <p class="cont-info-txt__li--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolore eveniet adipisci sapiente quibusdam rerum vitae ullam a repellat dolor. Voluptatem inventore voluptas reprehenderit dignissimos est ipsam numquam fugiat molestiae?</p>
+                </li>
+                <li class="cont-info-txt__li f f-a-top">
+                    <i class="fas fa-check"></i>
+                    <p class="cont-info-txt__li--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolore eveniet adipisci sapiente quibusdam rerum vitae ullam a repellat dolor. Voluptatem inventore voluptas reprehenderit dignissimos est ipsam numquam fugiat molestiae?</p>
+                </li>
+                <li class="cont-info-txt__li f f-a-top">
+                    <i class="fas fa-check"></i>
+                    <p class="cont-info-txt__li--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolore eveniet adipisci sapiente quibusdam rerum vitae ullam a repellat dolor. Voluptatem inventore voluptas reprehenderit dignissimos est ipsam numquam fugiat molestiae?</p>
+                </li>
+            </div>
+        </article>
+    </section>
+
+    <section class="cont-map row-80">
+        <article class="row-90 f-j">
+            <figure class="w-40">
+                <img class="row-100" src="../images/map.png">
+            </figure>
+            <div class="cont-info-map w-50">
+                <p class="features-map">Lorem ipsum</p>
+                <h4 class="title-map">Lorem ipsum</h4>
+                <p class="description-map">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque totam provident dolorum odit rerum suscipit? Doloribus laudantium, porro quidem velit quaerat aspernatur nostrum. Voluptatibus possimus veritatis repellendus quod dolores cumque?
+                </p>
+                <div class="cont-btn">
+                    <a class="btn" href="">Ver más</a>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer class="row-80">
+        <div class="footer__social-media">
+            <div class="footer__social-media__content">
+                <p class="footer__hashtag">#QuedateEnCasa</p>
+                <div class="footer__git-if">
+                    <a class="footer__git-if--a" href="https://github.com/siawebufps" target="_blank">Github.com/siawebinar</a>
+                    <span class="icon-instagram"></span>
+                    <span class="icon-facebook"></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer__contact">
+            <div class="footer__contact__content">
+                <div class="footer__copyright">
+                    <h1 class="blanco">SIAWEB</h1>
+                    <p class="blanco">Copyright © 2020</p>
+                </div>
+    
+                <div class="footer__info">
+                    <div class="footer__info__content">
+                        <p class="footer__info--title">Contacto</p>
+                        <a class="footer__info--a" href="">siawebinar@ufps.edu.co</a>
+                    </div>
+                    <figure class="footer__fig">
+                        <img class="footer__picture" src="../images/logoufps.png">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/semaforo.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
